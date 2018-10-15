@@ -1,0 +1,2 @@
+# StupidServer
+My Stupid Server
