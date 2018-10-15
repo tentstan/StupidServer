@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p  #{title} users nodejs服务api接口说明
+
+  li  删除对应id玩家:
+  a(href="http://localhost:3002/users/userDel?id=115") http://localhost:3002/users/userDel?id=115
+
+  li 添加玩家：
+  a(href="http://localhost:3002/users/userAdd?name=Ryan&age=9&sex=1") http://localhost:3002/users/userAdd?name=Ryan&age=9&sex=1
+
+  li 通过id修改玩家信息：
+  a(href="http://localhost:3002/users/userUpdate?name=Ryan&age=8&sex=1&id=1") http://localhost:3002/users/userUpdate?name=Ryan&age=8&sex=1&id=1
+
+  li 查询所有玩家信息：
+  a(href="http://localhost:3002/users/userAll	") http://localhost:3002/users/userAll		
+
+  li 查询单个玩家：
+  a(href="http://localhost:3002/users/userById?id=112") http://localhost:3002/users/userById?id=112
+  
+  
