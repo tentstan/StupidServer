@@ -54,6 +54,17 @@ CREATE TABLE `user` (
 
 insert  into `user`(`id`,`name`,`age`,`sex`,`source`,`tel`,`email`) values (1,'Tommy',23,0,'','',''),(2,'Rayn',5,0,'','','');
 
+DROP TABLE IF EXISTS `switch`;
+
+CREATE TABLE `switch` (
+  `name` char(255) DEFAULT NULL,
+  `switch` int(20) DEFAULT 0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+/*Data for the table `user` */
+
+insert  into `switch`(`name`,`switch`) values ('haha',0),('heihei',1);
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
