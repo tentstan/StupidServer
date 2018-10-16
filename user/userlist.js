@@ -27,7 +27,7 @@ module.exports = {
  			
 			// 建立连接，向表中插入值
 			// 'INSERT INTO user(id, name, age) VALUES(0,?,?)',
-			connection.query($sql.userinsert, [param.name, param.age,param.sex,param.source,param.tel,param.email], function(err, result) {
+			connection.query($sql.userinsert, [param.name, param.age,param.sex,param.birth,param.source,param.tel,param.email], function(err, result) {
 				if(result) {
 					result = {
 						code: 200,
@@ -70,7 +70,7 @@ module.exports = {
  			
 			// 建立连接，向表中插入值
 			// 'INSERT INTO user(id, name, age) VALUES(0,?,?)',
-			connection.query($sql.userupdate, [param.name, param.age,param.sex,param.source,param.tel,param.email,param.id], function(err, result) {
+			connection.query($sql.userupdate, [param.name, param.age,param.sex,param.birth,param.source,param.tel,param.email,param.id], function(err, result) {
 				if(result) {
 					result = {
 						code: 200,

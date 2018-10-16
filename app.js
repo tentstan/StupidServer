@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var routes = require('./routes/index');
+var goods = require('./routes/goods');
 var users = require('./routes/users');
 var gameSwitch = require('./routes/gameswitch');
 
@@ -21,6 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/goods', goods);
 app.use('/users', users);
 app.use('/switch',gameSwitch);
 

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p  #{title} goods api接口说明
+
+  li  删除对应id商品:
+  a(href="http://localhost:3002/goods/goodDel?id=115") http://localhost:3002/goods/goodDel?id=115
+
+  li 添加商品：
+  a(href="http://localhost:3002/goods/goodAdd?name=grape&desc=Best Grape&price=12.00&sum=23") http://localhost:3002/goods/goodAdd?name=grape&desc=Best Grape&price=12.00&sum=23
+
+  li 通过id修改商品：
+  a(href="http://localhost:3002/goods/goodUpdate?name=Peach&desc=Best peach&price=45.00&sum=12&id=1") http://localhost:3002/goods/goodUpdate?name=Peach&desc=Best Peach&price=45.00&sum=12&id=1
+
+  li 查询所有商品：
+  a(href="http://localhost:3002/goods/goodAll	") http://localhost:3002/goods/goodAll		
+
+  li 查询单个商品：
+  a(href="http://localhost:3002/goods/goodById?id=112") http://localhost:3002/goods/goodById?id=112
+  
+  

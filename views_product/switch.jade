@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p  #{title} switch api接口说明
+
+  li  删除对应游戏开关:
+  a(href="http://120.77.183.98:3002/switch/switchDel?name=haha") http://120.77.183.98:3002/switch/switchDel?name=haha
+
+  li 添加游戏开关：
+  a(href="http://120.77.183.98:3002/switch/switchAdd?name=huhu&switch=1") http://120.77.183.98:3002/switch/switchAdd?name=huhu&switch=1
+
+  li 通过name修改游戏开关：
+  a(href="http://120.77.183.98:3002/switch/switchUpdate?name=huhu&switch=0") http://120.77.183.98:3002/switch/switchUpdate?name=huhu&switch=0
+
+  li 查询所有开关：
+  a(href="http://120.77.183.98:3002/switch/switchAll	") http://120.77.183.98:3002/switch/switchAll		
+
+  li 查询单个游戏开关：
+  a(href="http://120.77.183.98:3002/switch/switchByName?name=haha") http://120.77.183.98:3002/switch/switchByName?name=haha
+  
+  

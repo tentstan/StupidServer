@@ -44,6 +44,7 @@ CREATE TABLE `user` (
   `name` char(255) DEFAULT NULL,
   `age` int(20) DEFAULT 0,
   `sex` int(20) DEFAULT 0,
+  `birth` datetime DEFAULT NULL,
   `source` varchar(255) DEFAULT NULL,
   `tel` varchar(11) DEFAULT NULL,
   `email` varchar(32) DEFAULT NULL,
@@ -52,7 +53,7 @@ CREATE TABLE `user` (
 
 /*Data for the table `user` */
 
-insert  into `user`(`id`,`name`,`age`,`sex`,`source`,`tel`,`email`) values (1,'Tommy',23,0,'','',''),(2,'Rayn',5,0,'','','');
+insert  into `user`(`id`,`name`,`age`,`sex`,`birth`,`source`,`tel`,`email`) values (1,'Tommy',23,0,'','','',''),(2,'Rayn',5,0,'','','','');
 
 DROP TABLE IF EXISTS `switch`;
 
